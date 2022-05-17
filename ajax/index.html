@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+			crossorigin="anonymous"
+		></script>
+		<title>AJAX Form</title>
+	</head>
+	<body>
+		<div class="position-absolute top-50 start-50 translate-middle">
+			<div class="container text-center mb-3">
+				<h1>Add Student Form</h1>
+			</div>
+			<form id="studentForm">
+				<div class="container-fluid border">
+					<div class="row my-4">
+						<div class="col">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="First name"
+								id="firstName"
+							/>
+						</div>
+						<div class="col">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Last name"
+								id="lastName"
+							/>
+						</div>
+					</div>
+					<div class="row my-4">
+						<div class="col">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Middle name"
+								id="middleName"
+							/>
+						</div>
+						<div class="col">
+							<div class="form-check col">
+								<input
+									class="form-check-input"
+									name="gender"
+									type="radio"
+									id="male"
+									value="Male"
+								/>
+								<label class="form-check-label" for="male">
+									Male
+								</label>
+							</div>
+							<div class="form-check col">
+								<input
+									class="form-check-input"
+									name="gender"
+									type="radio"
+									id="female"
+									value="Female"
+								/>
+								<label class="form-check-label" for="female">
+									Female
+								</label>
+							</div>
+						</div>
+					</div>
+					<form>
+						<div class="mb-4">
+							<input
+								type="email"
+								class="form-control"
+								id="email"
+								placeholder="Email Id"
+							/>
+						</div>
+						<div class="row my-4">
+							<div class="col">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="PRN"
+									id="prn"
+								/>
+							</div>
+							<div class="col">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="Roll No"
+									id="roll"
+								/>
+							</div>
+						</div>
+					</form>
+					<div class="row my-4">
+						<div class="col">
+							<select
+								id="branch"
+								class="form-select"
+								aria-label="Default select example"
+							>
+								<option selected>Select Branch</option>
+								<option value="CSE">CSE</option>
+								<option value="IT">IT</option>
+								<option value="Civil">Civil</option>
+							</select>
+						</div>
+					</div>
+					<div class="row my-4">
+						<div class="col">
+							<div>
+								<label class="mb-1">Birth Date</label>
+								<input
+									type="date"
+									id="dob"
+									class="form-control"
+									required="true"
+								/>
+							</div>
+						</div>
+						<div class="col">
+							<div>
+								<label class="mb-1">Registration Date</label>
+								<input
+									type="date"
+									id="registration"
+									class="form-control"
+									required="true"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="row my-4">
+						<div class="col">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Parents name"
+								id="parentName"
+							/>
+						</div>
+						<div class="col">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Parents number"
+								id="parentNo"
+							/>
+						</div>
+					</div>
+					<div class="text-center d-grid">
+						<button
+							type="submit"
+							class="btn btn-dark btn-lg mb-4"
+							id="addStudent"
+						>
+							Add Student
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+	<script src="./js/index.js"></script>
+</html>
